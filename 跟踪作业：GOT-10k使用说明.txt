@@ -1,0 +1,21 @@
+﻿GOT-10k 使用说明：
+
+
+【主页】：http://got-10k.aitestunion.com
+
+【下载】：进入 Downloads 页面点击 Full data，输入邮箱，点击按钮，登录邮箱查收下载链接。
+
+【测试】：在 GOT-10k/test 子集（180 段视频）下测试跟踪效果。记录每个视频的跟踪结果（T x 4 大小的矩阵）和跟踪时间（T x 1 大小的矩阵），并存为 txt 文件。具体格式参考 Submit/Instructions 页面。
+
+【生成结果】：把所有视频的跟踪结果和跟踪时间 txt 文件打包为 zip 文件。具体格式参考 Submit/Instructions 页面。
+
+【提交结果】：在 GOT-10k 官网注册账号并登录，在 My Account 页面点击 Create Tracker 创建算法。完成后点击 Submit 按钮，并在上传页面提交已生成的 zip 文件。十几秒后，刷新 My Account 页面可以看到得分。
+
+
+
+Tips：
+
+
+【工具包】：GOT-10k 提供官方 Python/MATLAB 工具包：https://github.com/got-10k/toolkit，可简化跟踪算法开发。在 examples/quick_examples.py 中，有读取数据库、测试算法、生成结果、评估结果的多个示例，可供参考。
+
+【示例跟踪算法】：GOT-10k 官方 GitHub 提供 SiamFC 算法实现代码（PyTorch）：https://github.com/got-10k/siamfc ，运行 test.py 可可视化跟踪过程及生成评估结果，供实现和运行视觉跟踪算法参考。
